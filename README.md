@@ -8,6 +8,7 @@
 # schematics
 
 (NOTE: the 2nd/3rd wiring between stepper driver board and arduino, swaps!)
+(      i.e driver board pin 1/2/3/4 <--> arduino 2/4/3/5)
 
 ![](img1.JPG)
 ![](img2.JPG)
