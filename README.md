@@ -11,3 +11,40 @@
 
 ![](img1.JPG)
 ![](img2.JPG)
+
+# sequencing
+
+```cpp
+//action list
+static int action_now = 0;
+#define ACTION_TAP_MAX 8
+#define ACTION_COUNT 2
+//actions
+static int tap_idx = 0;
+static int taps[ACTION_COUNT][ACTION_TAP_MAX][2] = { //unit: (steps, millisec)
+
+  //action #1
+  {
+    {   200,  1000},
+    {   400,  1000},
+    {   600,  1000},
+    {   800,  1000},
+    {   900,  1000},
+    {   650,  1000},
+    {   800,  1000},
+    {  1200,  1000}
+  },
+
+  // action #2
+  {
+    {  1000,  2000},
+    {  3000,  2000},
+    {  1000,  3000},
+    { 10000,   100},
+    {  3000,  2000},
+    { 10000,  2500},
+    {  1000,  1000},
+    {   100,   400}
+  }
+};
+```
